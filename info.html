@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA DO T.I. - Informações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">DIA DO T.I 2025</h1>
+            <div class="date-badge">ORGANIZADO PELO 2ºF</div>
+        </div>
+        
+        <div class="content">
+            <div class="info-section">
+                <h2 class="info-title"><i class="fas fa-microchip"></i> ORIGEM DO DIA DO T.I.</h2>
+                <p class="info-text">
+                    O Dia do Profissional de T.I. é celebrado em 19 de outubro em memória do nascimento de Ada Lovelace, 
+                    considerada a primeira programadora da história por seu trabalho na Máquina Analítica de Charles Babbage.
+                </p>
+                <div class="highlight-box">
+                    <p class="info-text">Ada Lovelace (1815-1852) foi uma matemática e escritora inglesa que criou o primeiro algoritmo para ser processado por uma máquina.</p>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h2 class="info-title"><i class="fas fa-school"></i> NA ETEC MCM</h2>
+                <p class="info-text">
+                    Na Etec Maria Cristina Medeiros (ETEC MCM) o evento comemorará o dia do curso de Informática para a Internet.
+                </p>
+                
+                <div class="etec-info">
+                    <h3 class="etec-title"><i class="fas fa-calendar-day"></i> DETALHES DO EVENTO</h3>
+                    
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <div class="detail-label">DATA</div>
+                            <div class="detail-value">09/10/2025</div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-label">HORÁRIO</div>
+                            <div class="detail-value">13:20h</div>
+                        </div>
+                        
+                    </div>
+                    
+                    <p class="info-text" style="margin-top: 15px; text-align: center;">
+                        Um evento especial para celebrar a tecnologia, a inovação e o trabalho dos futuros profissionais de T.I 
+                        que estão se formando na ETEC MCM.
+                    </p>
+                </div>
+                
+                <div class="highlight-box">
+                    <p class="info-text">Venha viajar no tempo com a gente!</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-btn" onclick="goBack()">VOLTAR</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+        
+        setInterval(() => {
+            const title = document.querySelector('.title');
+            title.style.animation = 'none';
+            setTimeout(() => {
+                title.style.animation = 'flicker 3s infinite alternate';
+            }, 10);
+        }, 5000);
+    </script>
+</body>
+</html>
